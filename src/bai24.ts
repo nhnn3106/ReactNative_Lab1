@@ -1,0 +1,18 @@
+abstract class Appliance {
+    turnOn(): void {
+
+    }
+}
+
+export class Fan extends Appliance {
+    turnOn(): void {
+        console.log("Fan started")
+    }
+}
+
+
+export class AirConditioner extends Appliance {
+    turnOn(): void {
+        console.log("Air conditioner started")
+    }
+}
