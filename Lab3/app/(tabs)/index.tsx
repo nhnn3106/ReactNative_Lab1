@@ -7,6 +7,7 @@ export default function Index() {
         flex: 1,
         alignItems: "center",
         backgroundColor: "#00CCF9",
+        paddingHorizontal: 10,
       }}>
       <Image
         source={require("../../assets/images/ellipse.png")}

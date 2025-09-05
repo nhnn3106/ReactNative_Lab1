@@ -14,17 +14,8 @@ export default function Index() {
         flex: 1,
       }}>
       <LinearGradient
-        colors={[
-          "white",
-          "white",
-          "white",
-          "white",
-          "white",
-          "white",
-          "white",
-          "#37D6F8",
-        ]}
-        style={{ flex: 1, alignItems: "center", marginHorizontal: 10 }}>
+        colors={["#C7F4F6", "#D1F4F6", "#E5F4F5", "#00CCF9"]}
+        style={{ flex: 1, alignItems: "center", paddingHorizontal: 10 }}>
         <Image
           source={require("../../assets/images/Vector.png")}
           style={{ marginVertical: 100 }}
@@ -47,40 +38,28 @@ export default function Index() {
           }}>
           Provide your account’s email for which you want to reset your password
         </Text>
-        <View style={{ flexDirection: "row", borderWidth: 1 }}>
+        <View
+          style={{ flexDirection: "row", borderWidth: 1, marginBottom: 50 }}>
           <Image source={require("../../assets/images/mail-2935365 1.png")} />
           <TextInput
             style={{ flex: 1, backgroundColor: "#C4C4C4" }}
             value="email"
           />
         </View>
-        <View
+
+        <TouchableOpacity
           style={{
+            backgroundColor: "#E3C000",
+            paddingVertical: 10,
+            paddingHorizontal: 30,
+
             width: "100%",
-            flexDirection: "row",
-            justifyContent: "space-evenly",
-            marginVertical: 30,
           }}>
-          <TouchableOpacity
-            style={{
-              backgroundColor: "#E3C000",
-              paddingVertical: 10,
-              paddingHorizontal: 30,
-              borderRadius: 10,
-            }}>
-            <Text style={{ fontWeight: "bold" }}>LOGIN</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              backgroundColor: "#E3C000",
-              paddingVertical: 10,
-              paddingHorizontal: 30,
-              borderRadius: 10,
-            }}>
-            <Text style={{ fontWeight: "bold" }}>SIGN UP</Text>
-          </TouchableOpacity>
-        </View>
-        <Text style={{ fontWeight: "bold" }}>HOW WE WORK?</Text>
+          <Text
+            style={{ fontWeight: "bold", textAlign: "center", fontSize: 20 }}>
+            NEXT
+          </Text>
+        </TouchableOpacity>
       </LinearGradient>
     </View>
   );

@@ -17,7 +17,7 @@ export default function Index() {
           "white",
           "#37D6F8",
         ]}
-        style={{ flex: 1, alignItems: "center" }}>
+        style={{ flex: 1, alignItems: "center", paddingHorizontal: 10 }}>
         <Image
           source={require("../../assets/images/ellipse.png")}
           style={{ marginVertical: 100 }}
